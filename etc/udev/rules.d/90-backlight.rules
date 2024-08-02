@@ -1,0 +1,3 @@
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chgrp rocklin /sys/class/backlight/%k/brightness"
+SUBSYSTEM=="backlight", ACTION=="add", RUN+="/bin/chmod g+w+x /sys/class/backlight/%k/brightness"
+
